@@ -71,8 +71,8 @@ chisq.test(data$How.satisfied.would.you.be.when.considering.to.purchase.products
 #Since p < 0.05, we accept alternative hypothesis i.e customer's satisfaction to shop on Flipkart compared to other e-commerce companies influences whether the customer has shopped during 'The Big Billion Days'.
 
 #Q12. Does customer satisfaction with the products on sale during 'The Big Billion Days' influence customer's satisfaction to shop on Flipkart compared to other e-commerce companies?
-#H1: Customer's satisfaction with the products on sale during 'The Big Billion Days' does not influence customer's satisfaction to shop on Flipkart.
-#H0: Customer's satisfaction with the products on sale during 'The Big Billion Days' influences customer's satisfaction to shop on Flipkart.
+#H0: Customer's satisfaction with the products on sale during 'The Big Billion Days' does not influence customer's satisfaction to shop on Flipkart.
+#H1: Customer's satisfaction with the products on sale during 'The Big Billion Days' influences customer's satisfaction to shop on Flipkart.
 chisq.test(data$Are.you.satisfied.with.the.products.on.sale.during..The.Big.Billion.Days.,data$How.satisfied.would.you.be.when.considering.to.purchase.products.from.the.following.e.commerce.companies...Flipkart.)
 #Since p < 0.05, we accept alternative hypothesis i.e customer's satisfaction with the products on sale during 'The Big Billion Days' influences customer's satisfaction to shop on Flipkart compared to other e-commerce companies.
 
@@ -90,7 +90,7 @@ hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most
 hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most...rate.the.following.important.factors.that.you.would.consider.while.shopping.during.the.sale.season...Quality.==4],ylim=c(0,30),xlab='Customers shopping status during Big Billion Days',main='Quality considered as fairly important',col=c('red','green'),breaks=10)+legend("center", c("Red - Did not shop", "Green - Shopped"), col=c("red", "green"), lwd=5,cex=0.75)
 hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most...rate.the.following.important.factors.that.you.would.consider.while.shopping.during.the.sale.season...Quality.==5],ylim=c(0,35),xlab='Customers shopping status during Big Billion Days',main='Quality considered as very important',col=c('red','green'),breaks=10)+legend("center", c("Red - Did not shop", "Green - Shopped"), col=c("red", "green"), lwd=5,cex=0.75)
 
-#Hypothesis testing
+#Q13. Hypothesis testing
 #If the customer did or did not shop during the Big Billion Days sale, does it influence their preference of choosing quality as a factor before purchasing a product during  the sale?
 #H0: Customer shopping status during the Big Billion Days sale does not influence their preference of choosing quality as a factor before purchasing a product during sale.
 #H1: Customer shopping status during the Big Billion Days sale does influence their preference of choosing quality as a factor before purchasing a product during sale.
@@ -106,7 +106,7 @@ hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most
 hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most...rate.the.following.important.factors.that.you.would.consider.while.shopping.during.the.sale.season...Brand.==4],ylim=c(0,20),xlab='Customers shopping status during Big Billion Days',main='Brand considered as fairly important',col=c('red','green'),breaks=10)+legend("center", c("Red - Did not shop", "Green - Shopped"), col=c("red", "green"), lwd=5,cex=0.75)
 hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most...rate.the.following.important.factors.that.you.would.consider.while.shopping.during.the.sale.season...Brand.==5],ylim=c(0,30),xlab='Customers shopping status during Big Billion Days',main='Brand considered as very important',col=c('red','green'),breaks=10)+legend("center", c("Red - Did not shop", "Green - Shopped"), col=c("red", "green"), lwd=5,cex=0.75)
 
-#Hypothesis testing
+#Q14. Hypothesis testing
 #If the customer did or did not shop during the Big Billion Days sale, does it influence their preference of choosing brand as a factor before purchasing a product during  the sale?
 #H0: Customer shopping status during the Big Billion Days sale does not influence their preference of choosing brand as a factor before purchasing a product during sale.
 #H1: Customer shopping status during the Big Billion Days sale does influence their preference of choosing brand as a factor before purchasing a product during sale.
@@ -122,7 +122,7 @@ hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most
 hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most...rate.the.following.important.factors.that.you.would.consider.while.shopping.during.the.sale.season...Price.==4],ylim=c(0,30),xlab='Customers shopping status during Big Billion Days',main='Price considered as fairly important',col=c('red','green'),breaks=10)+legend("center", c("Red - Did not shop", "Green - Shopped"), col=c("red", "green"), lwd=5,cex=0.75)
 hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most...rate.the.following.important.factors.that.you.would.consider.while.shopping.during.the.sale.season...Price.==5],ylim=c(0,30),xlab='Customers shopping status during Big Billion Days',main='Price considered as very important',col=c('red','green'),breaks=10)+legend("center", c("Red - Did not shop", "Green - Shopped"), col=c("red", "green"), lwd=5,cex=0.75)
 
-#Hypothesis testing
+#Q15. Hypothesis testing
 #If the customer did or did not shop during the Big Billion Days sale, does it influence their preference of choosing price as a factor before purchasing a product during  the sale?
 #H0: Customer shopping status during the Big Billion Days sale does not influence their preference of choosing price as a factor before purchasing a product during sale.
 #H1: Customer shopping status during the Big Billion Days sale does influence their preference of choosing price as a factor before purchasing a product during sale.
@@ -138,7 +138,7 @@ hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most
 hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most...rate.the.following.important.factors.that.you.would.consider.while.shopping.during.the.sale.season...Price.==4],ylim=c(0,30),xlab='Customers shopping status during Big Billion Days',main='Reviews considered as fairly important',col=c('red','green'),breaks=10)+legend("center", c("Red - Did not shop", "Green - Shopped"), col=c("red", "green"), lwd=5,cex=0.75)
 hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most...rate.the.following.important.factors.that.you.would.consider.while.shopping.during.the.sale.season...Price.==5],ylim=c(0,30),xlab='Customers shopping status during Big Billion Days',main='Reviews considered as very important',col=c('red','green'),breaks=10)+legend("center", c("Red - Did not shop", "Green - Shopped"), col=c("red", "green"), lwd=5,cex=0.75)
 
-#Hypothesis testing
+#Q16. Hypothesis testing
 #If the customer did or did not shop during the Big Billion Days sale, does it influence their preference of choosing reviews as a factor before purchasing a product during  the sale?
 #H0: Customer shopping status during the Big Billion Days sale does not influence their preference of choosing reviews as a factor before purchasing a product during sale.
 #H1: Customer shopping status during the Big Billion Days sale does influence their preference of choosing reviews as a factor before purchasing a product during sale.
@@ -154,7 +154,7 @@ hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most
 hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most...rate.the.following.important.factors.that.you.would.consider.while.shopping.during.the.sale.season...Discount.Percentage.==4],ylim=c(0,30),xlab='Customers shopping status during Big Billion Days',main='Discount Percentage considered as fairly important',col=c('red','green'),breaks=10)+legend("center", c("Red - Did not shop", "Green - Shopped"), col=c("red", "green"), lwd=5,cex=0.75)
 hist(bigbilliondayshopped[data$On.a.scale.of.1.5..1.being.least.and.5.being.most...rate.the.following.important.factors.that.you.would.consider.while.shopping.during.the.sale.season...Discount.Percentage.==5],ylim=c(0,30),xlab='Customers shopping status during Big Billion Days',main='Discount Percentage considered as very important',col=c('red','green'),breaks=10)+legend("center", c("Red - Did not shop", "Green - Shopped"), col=c("red", "green"), lwd=5,cex=0.75)
 
-#Hypothesis testing
+#Q17. Hypothesis testing
 #If the customer did or did not shop during the Big Billion Days sale, does it influence their preference of choosing discount percentage as a factor before purchasing a product during  the sale?
 #H0: Customer shopping status during the Big Billion Days sale does not influence their preference of choosing discount percentage as a factor before purchasing a product during sale.
 #H1: Customer shopping status during the Big Billion Days sale does influence their preference of choosing discount percentage as a factor before purchasing a product during sale.
