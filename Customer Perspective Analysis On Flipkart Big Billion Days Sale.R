@@ -58,18 +58,23 @@ chisq.test(data$Are.you.satisfied.with.the.products.on.sale.during..The.Big.Bill
 chisq.test(data$How.often.do.you.shop.from.Flipkart.,data$Would.you.consider.joining.Flipkart.Plus.Membership.to.avail.additional.benefits.from..The.Big.Billion.Days..)
 #Since p > 0.05, we accept null hypothesis i.e frequency of shopping on Flipkart does not influence customers from joining Flipkart Plus Membership.
 
-#Q10. Does customer profession influence in joining Flipkart Plus Membership?
+#Q10. Does customer profession influence in joining Flipkart Plus Membership to get additional benefits?
 #H0: Profession does not influence in joining Flipkart Plus Membership.
 #H1: Profession influences in joining Flipkart Plus Membership.
 chisq.test(data$Profession.that.you.belong.to,data$Would.you.consider.joining.Flipkart.Plus.Membership.to.avail.additional.benefits.from..The.Big.Billion.Days..)
 #Since p > 0.05, we accept null hypothesis i.e profession does not influence customers joining in Flipkart Plus Membership.
 
-#Q11. Does customer's satisfaction to shop on Flipkart compared to other e-commerce companies influence whether the customer has shopped during 'Big Billion Days'?
-#H0: Customer's satisfaction to shop on Flipkart does not influence whether the customer has shopped during 'Big Billion Days'.
-#H1: Customer's satisfaction to shop on Flipkart influences whether the customer has shopped during 'Big Billion Days'.
+#Q11. Does customer's satisfaction to shop on Flipkart compared to other e-commerce companies influence whether the customer has shopped during 'The Big Billion Days'?
+#H0: Customer's satisfaction to shop on Flipkart does not influence whether the customer has shopped during 'The Big Billion Days'.
+#H1: Customer's satisfaction to shop on Flipkart influences whether the customer has shopped during 'The Big Billion Days'.
 chisq.test(data$How.satisfied.would.you.be.when.considering.to.purchase.products.from.the.following.e.commerce.companies...Flipkart.,data$Have.you.shopped.during..The.Big.Billion.Days..)
-#Since p < 0.05, we accept alternative hypothesis i.e customer's satisfaction to shop on Flipkart influences whether the customer has shopped during 'Big Billion Days'.
+#Since p < 0.05, we accept alternative hypothesis i.e customer's satisfaction to shop on Flipkart compared to other e-commerce companies influences whether the customer has shopped during 'The Big Billion Days'.
 
+#Q12. Does customer satisfaction with the products on sale during 'The Big Billion Days' influence customer's satisfaction to shop on Flipkart compared to other e-commerce companies?
+#H1: Customer's satisfaction with the products on sale during 'The Big Billion Days' does not influence customer's satisfaction to shop on Flipkart.
+#H0: Customer's satisfaction with the products on sale during 'The Big Billion Days' influences customer's satisfaction to shop on Flipkart.
+chisq.test(data$Are.you.satisfied.with.the.products.on.sale.during..The.Big.Billion.Days.,data$How.satisfied.would.you.be.when.considering.to.purchase.products.from.the.following.e.commerce.companies...Flipkart.)
+#Since p < 0.05, we accept alternative hypothesis i.e customer's satisfaction with the products on sale during 'The Big Billion Days' influences customer's satisfaction to shop on Flipkart compared to other e-commerce companies.
 
 #Visualization of Multiple criteria dimensional analysis(MCDA)
 #Comparing customers who have shopped and did not shop during big billions day sale to what factors(Quality,Price,Brand,Review,Discount Percentage) do they consider when they purchase a product during online sale season.
